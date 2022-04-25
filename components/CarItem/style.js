@@ -17,7 +17,8 @@ export const Styles = StyleSheet.create({
     },
     subTitle: {
         fontSize: 16,
-        color: "#5c56c2",
+        color: "black",
+        fontWeight: "500",
     },
     image: {
         width: "100%",
@@ -25,4 +26,9 @@ export const Styles = StyleSheet.create({
         resizeMode: "cover",
         position: "absolute",
     },
+    buttonContainer: {
+        position: "absolute",
+        bottom: 50,
+        width: '100%',
+    }
 });

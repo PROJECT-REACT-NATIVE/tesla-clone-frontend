@@ -5,7 +5,7 @@ import { CartItem } from "./components/CarItem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CartItem/>
+      <CartItem name="Model X" tagLine="Started at $5000" image={require("./assets/images/ModelX.jpeg")}/>
     </View>
   );
 }
