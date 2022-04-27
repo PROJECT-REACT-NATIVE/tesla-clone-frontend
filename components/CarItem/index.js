@@ -3,7 +3,7 @@ import {  View, Text, ImageBackground } from "react-native";
 import StyleButton from "../StyleButton";
 import {Styles} from "./style"
 export  const CartItem = (props) => {
-  const { name, image, tagLineCTA,tagLine } = props;
+  const { name, image, tagLineCTA,tagLine } = props.car;
   return <>
     <View style={Styles.cardContainer}>
        <ImageBackground source={image} style={Styles.image}/>
@@ -17,10 +17,10 @@ export  const CartItem = (props) => {
       </View>
        <View style={Styles.buttonContainer}>
          <StyleButton type="primary" content={'Existing Inventory'} onPress={()=>{
-         console.log("first" )
+         console.warn("first" )
        }}/>
         <StyleButton type="secondary" content={'Custom order'} onPress={()=>{
-         console.log("second" )
+         console.warn("second" )
        }}/>
        </View>
     </View>

@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
 
 export const Styles = StyleSheet.create({
     cardContainer: {
         width: "100%",
-        height: "100%",
+        height: Dimensions.get('window').height,
     },
     titles: {
         marginTop: "30%",
@@ -29,10 +29,11 @@ export const Styles = StyleSheet.create({
     buttonContainer: {
         position: "absolute",
         bottom: 50,
-        width: '100%',
+        width: "100%",
     },
     subTitleCTA: {
-        textDecorationLine: 'underline',
-        color: '#5c5e62'
-    }
+        textDecorationLine: "underline",
+        color: "#5c5e62",
+
+    },
 });
