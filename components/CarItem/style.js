@@ -30,5 +30,9 @@ export const Styles = StyleSheet.create({
         position: "absolute",
         bottom: 50,
         width: '100%',
+    },
+    subTitleCTA: {
+        textDecorationLine: 'underline',
+        color: '#5c5e62'
     }
 });

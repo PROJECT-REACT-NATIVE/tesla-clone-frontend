@@ -5,7 +5,12 @@ import { CartItem } from "./components/CarItem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CartItem name="Model X" tagLine="Started at $5000" image={require("./assets/images/ModelX.jpeg")}/>
+      <CartItem
+        name="Model X"
+        tagLine="order online for "
+        tagLineCTA="Touchless delivery"
+        image={require("./assets/images/ModelX.jpeg")}
+      />
     </View>
   );
 }
